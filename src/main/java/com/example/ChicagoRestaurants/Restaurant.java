@@ -1,8 +1,8 @@
 package com.example.ChicagoRestaurants;
 
-public class Restaurant {
+public class Restaurant implements IRestaurant{
     public String generateRestaurant(String rank) {
-        switch(rank) {
+        switch (rank) {
             case "1":
                 return "Girl & The Goat";
             case "2":
@@ -19,6 +19,8 @@ public class Restaurant {
                 return "Cafe Ba-Ba-Reeba!";
             case "8":
                 return "Smoque BBQ";
+            case "9":
+                return "Little Goat Diner";
             default:
                 return "Pequod's Pizzeria";
         }
